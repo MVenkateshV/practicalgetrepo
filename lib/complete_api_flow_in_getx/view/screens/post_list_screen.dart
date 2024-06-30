@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:statemanager/flow_api_call/network_controller.dart';
+
+import '../../controllers/network_controller.dart';
 
 class PostListScreen extends StatefulWidget {
   const PostListScreen({super.key});

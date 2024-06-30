@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:statemanager/flow_api_call/post_list_screen.dart';
-import 'package:statemanager/flow_api_call/state_manage.dart';
+import 'package:statemanager/complete_api_flow_in_getx/view/screens/state_manage.dart';
+
+import 'post_list_screen.dart';
 
 class HomeScreens extends StatefulWidget {
   const HomeScreens({super.key});

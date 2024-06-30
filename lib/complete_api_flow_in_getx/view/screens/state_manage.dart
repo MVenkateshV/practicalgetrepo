@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'getx_state_controller.dart';
-import 'my_state_controller.dart';
+import '../../controllers/getx_state_controller.dart';
+import '../../controllers/my_state_controller.dart';
 
 class StateManage extends StatefulWidget {
   const StateManage({super.key});

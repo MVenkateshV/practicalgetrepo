@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:statemanager/flow_api_call/home_screens.dart';
+
+import 'complete_api_flow_in_getx/view/screens/home_screens.dart';
 
 void main() {
   runApp(const MyApp());
