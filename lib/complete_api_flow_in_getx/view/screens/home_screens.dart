@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:statemanager/complete_api_flow_in_getx/view/screens/state_manage.dart';
+import 'package:statemanager/widgets/dialog_snackbar_navigation/navigation_with_dialog.dart';
 
 import 'post_list_screen.dart';
 
@@ -37,6 +38,15 @@ class _HomeScreensState extends State<HomeScreens> {
               Get.to(const PostListScreen());
             },
             child: const Text("Getx State Builder"),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(const NavigationWithDialog());
+            },
+            child: const Text("navigation with dialog example"),
           ),
         ],
       ),
