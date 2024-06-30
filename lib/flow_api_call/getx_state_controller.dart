@@ -3,4 +3,5 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 
 class GetStateController extends GetxController{
   RxString name="".obs;
+
 }
