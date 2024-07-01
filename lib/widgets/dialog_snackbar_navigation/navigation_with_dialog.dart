@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+
 ///navigation , snackbar using getx,dialog and also arguments passing through getx
 class NavigationWithDialog extends StatefulWidget {
   const NavigationWithDialog({super.key});

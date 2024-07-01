@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:statemanager/widgets/basic_widgets/sample_basic_widgets_exp.dart';
 
 import 'complete_api_flow_in_getx/view/screens/home_screens.dart';
 
@@ -15,10 +16,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
       ),
-      home: const HomeScreens(),
+      // home: const HomeScreens(),
+      home: const SampleBasicWidgetsExamples(),
     );
   }
 }
