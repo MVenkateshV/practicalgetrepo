@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:statemanager/particular_value_update/screens/particular_values_update_screen.dart';
-import 'package:statemanager/widgets/basic_widgets/sample_basic_widgets_exp.dart';
 
-import 'complete_api_flow_in_getx/view/screens/home_screens.dart';
+import 'complete_api_flow_in_getx/view/screens/tab_view_screen.dart';
 import 'particular_value_update/bindings/particular_binding.dart';
+import 'widgets/checkbox_radiobuttons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,17 +19,19 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-
-      ),
+      theme: ThemeData(),
       // home: const HomeScreens(),
       // home: const SampleBasicWidgetsExamples(),
-      home: const ParticularValuesUpdate(),
-      getPages: [
-        GetPage(name: '/ParticularValuesUpdate', page: () => ParticularValuesUpdate(), binding: ParticularValuesBinding()),
+      // home: const ParticularValuesUpdate(),
+      // home: TabViewScreen(),
+      home: CheckBoxWithRadioButtons(),
 
+      getPages: [
+        GetPage(
+            name: '/ParticularValuesUpdate',
+            page: () => ParticularValuesUpdate(),
+            binding: ParticularValuesBinding()),
       ],
     );
   }
 }
-

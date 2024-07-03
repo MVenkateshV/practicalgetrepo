@@ -170,7 +170,7 @@ class _SampleBasicWidgetsExamplesState
                                 ],
                               ),
                             ),
-                            child: Padding(
+                            child: const Padding(
                                 padding: EdgeInsets.all(4.0), // stroke
                                 child: CircleAvatar(
                                   backgroundImage:
@@ -186,7 +186,7 @@ class _SampleBasicWidgetsExamplesState
                             children: <Widget>[
                               Text(
                                 listsData2[index]['key2'],
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.green,
                                   fontSize: 20,
                                 ),
@@ -206,7 +206,7 @@ class _SampleBasicWidgetsExamplesState
                   ],
                 ),*/
 
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ElevatedButton(
@@ -224,8 +224,8 @@ class _SampleBasicWidgetsExamplesState
                           textColor: Colors.white,
                           fontSize: 16.0);
                     },
-                    child: Text("Click me")),
-                SizedBox(
+                    child: const Text("Click me")),
+                const SizedBox(
                   height: 20,
                 ),
               ],
@@ -258,7 +258,7 @@ class _SampleBasicWidgetsExamplesState
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(bottom: 20),
               child: Text('First Name'),
             ),
@@ -266,7 +266,7 @@ class _SampleBasicWidgetsExamplesState
               style: TextStyle(color: Colors.black),
               onSaved: (String? value) {},
               validator: validator,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'First Name',
                 labelText: 'First Name',
@@ -274,14 +274,14 @@ class _SampleBasicWidgetsExamplesState
                 hintStyle: TextStyle(color: Colors.black, fontSize: 16),
                 errorBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.red),
-                    borderRadius: const BorderRadius.all(Radius.circular(
+                    borderRadius: BorderRadius.all(Radius.circular(
                       10.0,
                     ))),
                 focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.green)),
                 enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.black),
-                    borderRadius: const BorderRadius.all(Radius.circular(
+                    borderRadius: BorderRadius.all(Radius.circular(
                       10.0,
                     ))),
               ),
